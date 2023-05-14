@@ -23,10 +23,10 @@ class TV:
         self.channel = channel
     # Return the volume
     def get_volume(self):
-        return self.volume
+        return self.volume_level
     # Set new volume
-    def set_volume(self, volume):
-        self.volume = volume
+    def set_volume(self, volume_level):
+        self.volume_level = volume_level
     # Increase the channel by 1
     def channel_up(self):
         self.channel += 1
@@ -35,14 +35,14 @@ class TV:
         self.channel -= 1
     # Increase volume by 1
     def volume_up(self):
-        self.volume += 1
+        self.volume_level += 1
     # Decrease volume by 1
     def volume_down(self):
-        self.volume -= 1
+        self.volume_level -= 1
 
 # Create a Test driver program named test_tv
-test_tv_1 = TV(channel = 30, volume = 3)
-test_tv_2 = TV(channel = 3, volume = 2)
+test_tv_1 = TV(channel = 30, volume_level = 3)
+test_tv_2 = TV(channel = 3, volume_level = 2)
 
 # Object 1
 test_tv_1.turn_on()
