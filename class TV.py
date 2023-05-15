@@ -43,40 +43,10 @@ class TV:
         self.volume_level -= 1
 
 # Create a Test driver program named test_tv
-test_tv_1 = TV(channel = 30, volume_level = 3)
-test_tv_2 = TV(channel = 3, volume_level = 2)
-
-# Object 1
-test_tv_1.turn_on()
-test_tv_1.set_channel(30)
-print(test_tv_1.get_channel())
-test_tv_1.set_volume(3)
-print(test_tv_1.get_volume())
-test_tv_1.channel_up()
-print(test_tv_1.get_channel())
-test_tv_1.channel_down()
-print(test_tv_1.get_channel())
-test_tv_1.volume_up()
-print(test_tv_1.get_volume())
-test_tv_1.volume_down()
-print(test_tv_1.get_volume())
-
-# Object 2
-test_tv_2.turn_on()
-test_tv_2.set_channel(3)
-test_tv_2.set_volume(2)
-print(test_tv_2.get_channel())
-print(test_tv_2.get_volume())
-test_tv_2.channel_up()
-print(test_tv_2.get_channel())
-test_tv_2.channel_down()
-print(test_tv_2.get_channel())
-test_tv_2.volume_up()
-print(test_tv_2.get_volume())
-test_tv_2.volume_down()
-print(test_tv_2.get_volume())
-
-# Create a Test driver program named test_tv
+def test_tv():
     # first object from class TV
+    test_tv_1 = TV(channel = 30, volume = 3)
+    print(f"tv1's channel is " + str(test_tv_1.channel), "and volume level is " + str(test_tv_1.get_volume()))
     # second object from class TV
 # Call the function
+test_tv()
