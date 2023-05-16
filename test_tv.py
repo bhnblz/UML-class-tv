@@ -1,5 +1,6 @@
 from class_tv import TV
 
+greetings = "Welcome"
 def test_tv():
     # first object from class TV
     test_tv_1 = TV(channel = 30, volume_level = 3)
