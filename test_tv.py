@@ -7,7 +7,7 @@ print(Fore.LIGHTRED_EX + "=" * 113)
 print(Fore.LIGHTRED_EX + introduction.center(113))
 print("=" * 113)
 
-# Import class tv from TV
+# Import TV from class tv
 from class_tv import TV 
 
 def test_tv():
