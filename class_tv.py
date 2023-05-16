@@ -5,9 +5,10 @@ class TV:
     volume_level = ""
     tv_is_on = True
     # Constructors
-    def __init__(self, channel, volume_level):
+    def __init__(self, channel, volume_level, tv_is_on):
         self.channel = channel
         self.volume_level = volume_level
+        self.tv_is_on = tv_is_on
     # Methods
     # Turn on the TV
     def turn_on(self):
@@ -57,29 +58,3 @@ class TV:
             self.volume_level -= 1
         else:
             print("TV is off. You cannot decrease the volume")
-
-# test if the functions and methods are running
-test_tv_2 = TV(channel = "", volume_level = "")
-test_tv_1 = TV(channel = "", volume_level = "")
-
-# Object 1
-test_tv_1.turn_off()
-test_tv_1.set_channel(30)
-test_tv_1.set_volume(7)
-print(test_tv_1.get_channel())
-print(test_tv_1.get_volume())
-test_tv_1.channel_up()
-print(test_tv_1.get_channel())
-test_tv_1.volume_up()
-print(test_tv_1.get_volume())
-
-# Object 2
-test_tv_2.turn_on()
-test_tv_2.set_channel(50)
-test_tv_2.set_volume(6)
-print(test_tv_2.get_channel())
-print(test_tv_2.get_volume())
-test_tv_2.channel_up()
-print(test_tv_2.get_channel())
-test_tv_2.volume_up()
-print(test_tv_2.get_volume())
