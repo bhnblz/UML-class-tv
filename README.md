@@ -22,3 +22,25 @@ To run this program, you just need to set channel and volume and it will display
 
 # Disclaimer
 You can add more methods to this program depending on what you need.
+
+# Pseudocode for main file (class_tv)
+    # Create a class named class TV
+      # The Attributes
+      # Constructors
+      # Methods
+      # Turn on the TV
+      # Turn off the TV
+      # Return the channel
+      # Set new channel
+      # Return the volume
+      # Set new volume
+      # Increase the channel by 1
+      # Decrease the channel by 1
+      # Increase volume by 1
+      # Decrease volume by 1
+ 
+ # Pseudocode for test_tv file
+    # Import class tv from TV
+      # first object from class TV
+      # second object from class TV
+    # Call the function
